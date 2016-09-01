@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
@@ -82,7 +83,109 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVy-vg-4dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1003" y="21"/>
+            <point key="canvasLocation" x="1663" y="-141"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="mFG-e5-nfJ">
+            <objects>
+                <viewController id="Dnq-2p-Iii" userLabel="Login" customClass="LoginViewController" customModule="MyFavoriteMovies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JiU-Dg-mtH"/>
+                        <viewControllerLayoutGuide type="bottom" id="NGB-ei-8bW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jkc-rF-IKy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QDy-6d-gGZ">
+                                <rect key="frame" x="20" y="55" width="560" height="527"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Gb6-zg-DzG">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="JhL-lV-7Mb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="248" text="Flickx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nC2-zA-FcZ">
+                                        <rect key="frame" x="0.0" y="110" width="560" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Emn-Ni-XVJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBJ-1H-vpq">
+                                        <rect key="frame" x="0.0" y="160" width="560" height="32"/>
+                                        <color key="backgroundColor" red="0.67632260870000005" green="0.92051799479999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="4jC-7E-LLW"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qm9-T1-JUG">
+                                        <rect key="frame" x="0.0" y="202" width="560" height="32"/>
+                                        <color key="backgroundColor" red="0.67632260870000005" green="0.92051799479999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7u-VQ-Vpd" customClass="BorderedButton" customModule="MyFavoriteMovies" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="244" width="560" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="c9o-LS-FcI"/>
+                                        </constraints>
+                                        <state key="normal" title="Login">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="Dnq-2p-Iii" eventType="touchUpInside" id="fRy-Zi-fYt"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCv-Vo-SXS">
+                                        <rect key="frame" x="0.0" y="298" width="560" height="229"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Qm9-T1-JUG" firstAttribute="height" secondItem="yBJ-1H-vpq" secondAttribute="height" id="tc0-uR-KyQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35070900710000003" green="0.79530321839999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="QDy-6d-gGZ" secondAttribute="trailing" id="0id-TJ-dm1"/>
+                            <constraint firstItem="QDy-6d-gGZ" firstAttribute="leading" secondItem="jkc-rF-IKy" secondAttribute="leadingMargin" id="6CR-9c-Two"/>
+                            <constraint firstItem="QDy-6d-gGZ" firstAttribute="top" secondItem="JiU-Dg-mtH" secondAttribute="bottom" constant="35" id="eNT-3d-66E"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="QDy-6d-gGZ" secondAttribute="bottom" constant="18" id="uPE-VG-dt1"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fEK-fP-Fdq" appends="YES" id="rXI-Xj-VXa"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="debugTextLabel" destination="cCv-Vo-SXS" id="4TD-aW-2Vn"/>
+                        <outlet property="loginButton" destination="g7u-VQ-Vpd" id="w8N-16-MAk"/>
+                        <outlet property="movieImageView" destination="Gb6-zg-DzG" id="ElU-Db-gBb"/>
+                        <outlet property="passwordTextField" destination="Qm9-T1-JUG" id="fH4-Wd-sTF"/>
+                        <outlet property="usernameTextField" destination="yBJ-1H-vpq" id="tOc-93-D5x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaq-9H-uXn" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fEK-fP-Fdq">
+                    <connections>
+                        <action selector="userDidTapView:" destination="Dnq-2p-Iii" id="zZm-9J-36u"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="593" y="-219"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera Icon" width="30" height="30"/>
+    </resources>
 </document>

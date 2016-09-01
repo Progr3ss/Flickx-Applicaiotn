@@ -52,6 +52,7 @@ extension AppDelegate {
 			components.queryItems!.append(queryItem)
 		}
 		
+		print("TBMDBURLFROMPARAMETERS \(components.URL!)")
 		return components.URL!
 	}
 }

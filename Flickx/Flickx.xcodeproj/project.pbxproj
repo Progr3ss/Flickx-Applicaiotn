@@ -19,6 +19,8 @@
 		916B85561D7661900050E34C /* CustomImageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B85551D7661900050E34C /* CustomImageFlowLayout.swift */; };
 		916B85581D7664AF0050E34C /* AnnotatedMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B85571D7664AF0050E34C /* AnnotatedMovieCell.swift */; };
 		91BE68A41D77B4DC000FFC58 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE68A31D77B4DC000FFC58 /* Config.swift */; };
+		91BE68A81D77C13D000FFC58 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE68A71D77C13D000FFC58 /* BorderedButton.swift */; };
+		91BE68AA1D77C19D000FFC58 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE68A91D77C19D000FFC58 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		916B85551D7661900050E34C /* CustomImageFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageFlowLayout.swift; sourceTree = "<group>"; };
 		916B85571D7664AF0050E34C /* AnnotatedMovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotatedMovieCell.swift; sourceTree = "<group>"; };
 		91BE68A31D77B4DC000FFC58 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		91BE68A71D77C13D000FFC58 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		91BE68A91D77C19D000FFC58 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				916B854B1D765B9F0050E34C /* Constants.swift */,
 				916B85551D7661900050E34C /* CustomImageFlowLayout.swift */,
 				916B85531D7660EF0050E34C /* HomeViewController.swift */,
+				91BE68A71D77C13D000FFC58 /* BorderedButton.swift */,
+				91BE68A91D77C19D000FFC58 /* LoginViewController.swift */,
 			);
 			path = Flickx;
 			sourceTree = "<group>";
@@ -274,8 +280,10 @@
 				916B854C1D765B9F0050E34C /* Constants.swift in Sources */,
 				91BE68A41D77B4DC000FFC58 /* Config.swift in Sources */,
 				916B85581D7664AF0050E34C /* AnnotatedMovieCell.swift in Sources */,
+				91BE68AA1D77C19D000FFC58 /* LoginViewController.swift in Sources */,
 				916B85541D7660EF0050E34C /* HomeViewController.swift in Sources */,
 				916B85561D7661900050E34C /* CustomImageFlowLayout.swift in Sources */,
+				91BE68A81D77C13D000FFC58 /* BorderedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
