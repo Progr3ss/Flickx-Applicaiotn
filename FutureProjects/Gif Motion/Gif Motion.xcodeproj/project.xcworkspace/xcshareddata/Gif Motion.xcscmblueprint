@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FAB3DF929665DB8BF309C13B2C39A8D8A2E7CF34",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "682972232EF9E71180F53A420F5A35C1A533D357" : 0,
+    "FAB3DF929665DB8BF309C13B2C39A8D8A2E7CF34" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A190BAD3-0A96-4EFA-A879-58686CC0D730",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "682972232EF9E71180F53A420F5A35C1A533D357" : "",
+    "FAB3DF929665DB8BF309C13B2C39A8D8A2E7CF34" : "Projects\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Gif Motion",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FutureProjects\/Gif Motion\/Gif Motion.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Progr3ss\/PitchPerfect.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "682972232EF9E71180F53A420F5A35C1A533D357"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Progr3ss\/Flickx-Applicaiotn.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FAB3DF929665DB8BF309C13B2C39A8D8A2E7CF34"
+    }
+  ]
+}
