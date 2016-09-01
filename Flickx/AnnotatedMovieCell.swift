@@ -9,5 +9,7 @@
 import UIKit
 
 class AnnotatedMovieCell: UICollectionViewCell {
+	
+	@IBOutlet weak var imageView : UIImageView!
     
 }

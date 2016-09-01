@@ -51,20 +51,34 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MVZ-8t-md6">
                                 <rect key="frame" x="0.0" y="79" width="600" height="521"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Slg-nd-LNw">
-                                    <size key="itemSize" width="122" height="163"/>
+                                    <size key="itemSize" width="185" height="237"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AnnotatedPhotoCell" id="8Oz-yp-tv0" customClass="AnnotatedPhotoCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="122" height="163"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="237"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="122" height="163"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="185" height="237"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kLm-ue-cvw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="185" height="237"/>
+                                                </imageView>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="kLm-ue-cvw" secondAttribute="trailing" id="cmz-1k-gf8"/>
+                                            <constraint firstItem="kLm-ue-cvw" firstAttribute="leading" secondItem="8Oz-yp-tv0" secondAttribute="leading" id="dsV-QR-KwQ"/>
+                                            <constraint firstItem="kLm-ue-cvw" firstAttribute="top" secondItem="8Oz-yp-tv0" secondAttribute="top" id="hwk-iZ-qab"/>
+                                            <constraint firstAttribute="bottom" secondItem="kLm-ue-cvw" secondAttribute="bottom" id="nbu-oi-Bf0"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="kLm-ue-cvw" id="hyg-oM-hJd"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -80,6 +94,9 @@
                             <constraint firstAttribute="trailing" secondItem="MVZ-8t-md6" secondAttribute="trailing" id="yHl-eJ-ROU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="MVZ-8t-md6" id="7Kv-Ot-TYO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aVy-vg-4dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +105,7 @@
         <!--Login-->
         <scene sceneID="mFG-e5-nfJ">
             <objects>
-                <viewController id="Dnq-2p-Iii" userLabel="Login" customClass="LoginViewController" customModule="MyFavoriteMovies" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dnq-2p-Iii" userLabel="Login" customClass="LoginViewController" customModule="Flickx" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JiU-Dg-mtH"/>
                         <viewControllerLayoutGuide type="bottom" id="NGB-ei-8bW"/>
@@ -131,7 +148,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7u-VQ-Vpd" customClass="BorderedButton" customModule="MyFavoriteMovies" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7u-VQ-Vpd" customClass="BorderedButton" customModule="Flickx" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="244" width="560" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="c9o-LS-FcI"/>
