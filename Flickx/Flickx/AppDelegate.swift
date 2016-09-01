@@ -5,20 +5,22 @@
 //  Created by martin chibwe on 8/30/16.
 //  Copyright © 2016 Martin Chibwe. All rights reserved.
 //
-
 import UIKit
+
+// MARK: - AppDelegate: UIResponder, UIApplicationDelegate
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+	
+	// MARK: Properties
+	
 	var window: UIWindow?
 	
 	var sharedSession = NSURLSession.sharedSession()
 	var requestToken: String? = nil
 	var sessionID: String? = nil
 	var userID: Int? = nil
-
-
+	
 	// configuration for TheMovieDB, we'll take care of this for you =)...
 	var config = Config()
 	
@@ -31,12 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		
 		return true
 	}
-	
-
-
-
-
 }
+
+// MARK: Create URL from Parameters
 
 extension AppDelegate {
 	
@@ -52,8 +51,7 @@ extension AppDelegate {
 			let queryItem = NSURLQueryItem(name: key, value: "\(value)")
 			components.queryItems!.append(queryItem)
 		}
+		
 		return components.URL!
 	}
-	
 }
-

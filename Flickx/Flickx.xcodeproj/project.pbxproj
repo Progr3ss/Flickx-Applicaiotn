@@ -14,11 +14,11 @@
 		916B85331D765AAA0050E34C /* FlickxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B85321D765AAA0050E34C /* FlickxTests.swift */; };
 		916B853E1D765AAA0050E34C /* FlickxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B853D1D765AAA0050E34C /* FlickxUITests.swift */; };
 		916B854C1D765B9F0050E34C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B854B1D765B9F0050E34C /* Constants.swift */; };
-		916B854E1D765C870050E34C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B854D1D765C870050E34C /* Config.swift */; };
 		916B85501D765E0D0050E34C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 916B854F1D765E0D0050E34C /* Info.plist */; };
 		916B85541D7660EF0050E34C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B85531D7660EF0050E34C /* HomeViewController.swift */; };
 		916B85561D7661900050E34C /* CustomImageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B85551D7661900050E34C /* CustomImageFlowLayout.swift */; };
 		916B85581D7664AF0050E34C /* AnnotatedMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916B85571D7664AF0050E34C /* AnnotatedMovieCell.swift */; };
+		91BE68A41D77B4DC000FFC58 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE68A31D77B4DC000FFC58 /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +51,11 @@
 		916B853D1D765AAA0050E34C /* FlickxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickxUITests.swift; sourceTree = "<group>"; };
 		916B853F1D765AAA0050E34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916B854B1D765B9F0050E34C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		916B854D1D765C870050E34C /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		916B854F1D765E0D0050E34C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916B85531D7660EF0050E34C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		916B85551D7661900050E34C /* CustomImageFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageFlowLayout.swift; sourceTree = "<group>"; };
 		916B85571D7664AF0050E34C /* AnnotatedMovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotatedMovieCell.swift; sourceTree = "<group>"; };
+		91BE68A31D77B4DC000FFC58 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +86,7 @@
 		916B85111D765AA90050E34C = {
 			isa = PBXGroup;
 			children = (
+				91BE68A31D77B4DC000FFC58 /* Config.swift */,
 				916B85571D7664AF0050E34C /* AnnotatedMovieCell.swift */,
 				916B851C1D765AA90050E34C /* Flickx */,
 				916B85311D765AAA0050E34C /* FlickxTests */,
@@ -114,7 +115,6 @@
 				916B85291D765AA90050E34C /* Info.plist */,
 				916B854B1D765B9F0050E34C /* Constants.swift */,
 				916B85551D7661900050E34C /* CustomImageFlowLayout.swift */,
-				916B854D1D765C870050E34C /* Config.swift */,
 				916B85531D7660EF0050E34C /* HomeViewController.swift */,
 			);
 			path = Flickx;
@@ -272,7 +272,7 @@
 			files = (
 				916B851E1D765AA90050E34C /* AppDelegate.swift in Sources */,
 				916B854C1D765B9F0050E34C /* Constants.swift in Sources */,
-				916B854E1D765C870050E34C /* Config.swift in Sources */,
+				91BE68A41D77B4DC000FFC58 /* Config.swift in Sources */,
 				916B85581D7664AF0050E34C /* AnnotatedMovieCell.swift in Sources */,
 				916B85541D7660EF0050E34C /* HomeViewController.swift in Sources */,
 				916B85561D7661900050E34C /* CustomImageFlowLayout.swift in Sources */,
@@ -502,6 +502,7 @@
 				916B85441D765AAA0050E34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		916B85451D765AAA0050E34C /* Build configuration list for PBXNativeTarget "FlickxTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +511,7 @@
 				916B85471D765AAA0050E34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		916B85481D765AAA0050E34C /* Build configuration list for PBXNativeTarget "FlickxUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +520,7 @@
 				916B854A1D765AAA0050E34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
